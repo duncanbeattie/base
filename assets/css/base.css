@@ -1,0 +1,195 @@
+/*
+ * LT
+ *
+ */
+
+@import: url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+/* RESET & DEFAULTS */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {margin : 0;padding : 0;border : 0;font-size : 100%;font : inherit;vertical-align : baseline; }article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display : block; }abbr[title] { border-bottom : 1px dotted; cursor : help; }p,ol,ul,dl,address { margin-bottom : 1.5em; font-size : 1em;  }ul,ol { margin : 0 0 1.5em 0px; padding : 0 0 0 24px; }ul { list-style-type : disc; }ol { list-style-type : decimal; }li ul,li ol { margin : 0;font-size : 1em;  }dl,dd { margin-bottom : 1.5em; }dt { font-weight : normal; }blockquote  { margin : 0 0 1.5em 0px; padding : 0 24px; border-left : 1px solid rgb(200,200,200);font-style : italic; }blockquote:before,blockquote:after,q:before,q:after {content : '';content : none; }b,strong{ font-weight : bold; }i,em { font-style : italic; }sup,sub { position : relative;font-size : 75%; line-height : 0; }sup { top : -.5em; }sub { bottom : -.25em; }address { font-style : normal; }pre { margin-bottom : 1.5em; white-space : pre; white-space : pre-wrap; word-wrap : break-word; }pre,code { font : .875em 'andale mono','lucida console',monospace; line-height : 1.5; }small {font-size : 1em;  }a,a:visited {outline : none;color : inherit;text-decoration : none; }a:hover { outline : none;color : inherit; text-decoration : underline; }a:active,a:focus { outline : none;color : rgb(0,0,0); }figure {margin-bottom : 1.5em; }figure img,figure object,figure embed {margin-bottom : .75em;max-width : 100%; }figcaption {display : block;font-weight : normal; }table { border-collapse : collapse;border-spacing : 0;margin-bottom : 1.4em; width : 100%;font-size : .875em; }th { font-weight : bold; }th,td,caption { padding : .25em 10px .25em 5px; }tfoot { font-style : italic; }caption { background-color : transparent; }.clearfix { zoom : 1; }.clearfix:before,.clearfix:after { content : "\0020"; display : block; height : 0; overflow : hidden; }.clearfix:after { clear : both; }a:link { -webkit-tap-highlight-color : rgb(52,158,219); }::-webkit-selection { background : rgb(23,119,175); color : rgb(250,250,250); text-shadow : none; }::-moz-selection { background : rgb(23,119,175); color : rgb(250,250,250); text-shadow : none; }::selection { background : rgb(23,119,175); color : rgb(250,250,250); text-shadow : none; }.ie7 img,.iem7 img { -ms-interpolation-mode : bicubic; }.ir { display : block; text-indent : -999em; overflow : hidden; background-repeat : no-repeat; text-align : left; direction : ltr; }.hidden { display : none; visibility : hidden; }.visuallyhidden { position : absolute;clip : rect(0 0 0 0); overflow : hidden;margin: -1px;padding : 0;height : 1px;width : 1px;border : 0; }.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {position : static;clip : auto; overflow : visible;height : auto; margin : 0;   width : auto; }.invisible { visibility : hidden; }p{ orphans: 3 }
+div,input,textarea  { -webkit-box-sizing : border-box;-moz-box-sizing : border-box;-o-box-sizing : border-box;box-sizing : border-box; }
+/* LAYOUT */
+html{
+	background: #fbfbfb;
+	min-height: 100%;
+	min-width: 800px;
+	background-color: rgba(2,164,214,.1);
+	box-shadow: 0 2px 1px rgba(255, 255, 255, 0.75) inset, 0 -1px 0 rgba(100, 100, 100, 0.1) inset, 0 -0.5em 6.5em rgba(100, 100, 150, 0.25) inset;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #231e1a;
+}
+
+/* TYPE */
+h1,h2,h3,h4,h5,h6{
+	font-family : 'Open Sans', sans-serif;
+	font-weight : 700;
+}
+h1{
+	margin-bottom : .75em;
+	font-size : 3em;
+	line-height : 1.2;
+}
+h2{
+	margin-bottom : .75em;
+	font-size : 2em;
+	line-height : 1.2;
+	font-weight: 300;
+}
+h3{
+	margin-bottom : 1em;
+	font-size : 1.142em;
+	line-height : 1.3;
+	font-family: georgia, serif;
+}
+h4{
+	margin-bottom : 1.25em;
+	font-size : 1.25em;
+	line-height : 1.25;
+}
+h5{
+	margin-bottom : 1.5em;
+	font-size : 1em;
+}
+h6{
+	font-size : 1em;
+}
+
+p{
+	font-family: georgia, serif;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+
+/* header */
+.header{
+    background: #70787B;
+    padding: .5em 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 -4px 8px rgba(0,0,0,.25) inset, 0 1px 0 rgba(255,255,255,.5);
+}
+	.header h1{
+		font-size: 1.5em;
+		font-weight: 500;
+		margin: 0;
+		color: #eaeaea;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		padding: 0 .5em;
+	}
+		.header h1 a{
+			
+		}
+
+/* Options */
+.options{
+	background: rgba(255,255,255,.5);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 20%;
+	min-width: 180px;
+	z-index: 0;
+	box-shadow: -1px 0 4px rgba(0,0,0,.1) inset;
+	padding-top: 45px;
+	 -webkit-box-sizing : border-box;-moz-box-sizing : border-box;-o-box-sizing : border-box;box-sizing : border-box;
+	overflow-y: scroll;
+}
+
+	.sect{
+		
+	}
+		.sect h2{
+			background: none repeat scroll 0 0 rgba(57, 149, 198, 0.5);
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75) inset, 0 -1px 4px rgba(0, 0, 0, 0.15) inset;
+			color: #325567;
+			font-size: 1em;
+			font-weight: 700;
+			margin: 0;
+			padding: 0.5em;
+			text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+		}
+		.sect ul{
+			color: #325567;
+			font-size: 0.875em;
+			font-weight: 500;
+			list-style: none outside none;
+			margin: 0;
+			padding: 0;
+		}
+			.sect li{
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+				box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) inset;
+				padding: 0.35em;
+				position: relative;
+				cursor: pointer;
+				-webkit-transition: all .25s linear;
+				-moz-transition: all .25s linear;
+				-ms-transition: all .25s linear;
+				-o-transition: all .25s linear;
+				transition: all .25s linear;
+				
+			}
+				.sect li:before{
+					background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
+					border-radius: 0.25em 0.25em 0.25em 0.25em;
+					box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.15);
+					content: "";
+					float: left;
+					height: 1em;
+					margin: 0.25em 0.5em 0 0;
+					width: 1em;
+				}
+				.sect li:last-child{
+					border: none;
+				}
+				.sect li:nth-child(2n){
+					background: rgba(0,0,0,.05);
+				}
+				
+				.sect li span{
+					opacity: 0;
+					pointer-events: none;
+					top: 100%;
+					border-radius: .5em;
+					box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 -8px 12px rgba(0,0,0,.2) inset;
+					text-shadow: -1px -1px 0 rgba(0,0,0,.25);
+					-webkit-transition: all .25s linear;
+					-moz-transition: all .25s linear;
+					-ms-transition: all .25s linear;
+					-o-transition: all .25s linear;
+					transition: all .25s linear;
+					
+				}
+			.sect li:hover{
+				background: none;
+				box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) inset, 0 0 1.5em rgba(57, 149, 198, 0.25) inset;
+				
+			}
+				.sect li:hover span{
+					opacity: .95;
+					top:110%;
+				}
+
+.sect li span { position: absolute; background: #70787B; color:#fff; border: 2px solid #303030;z-index: 2;width: 80%;left: 10%;font-size:13px; font-weight: 500; padding: .5em;  } .sect li span:after, .sect li span:before { bottom: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; } .sect li span:after { border-color: rgba(136, 183, 213, 0); border-bottom-color: #70787B; border-width: 10px; left: 50%; margin-left: -10px; } .sect li span:before { border-color: rgba(194, 225, 245, 0); border-bottom-color: #303030; border-width: 13px; left: 50%; margin-left: -13px; }
+
+
+/* code */
+.code{
+	background: rgb(255,255,255);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 80%;
+	z-index: 0;	
+	left: 20%;
+	padding: 4em 2em;
+	overflow-y: scroll;
+	 -webkit-box-sizing : border-box;-moz-box-sizing : border-box;-o-box-sizing : border-box;box-sizing : border-box;
+}
