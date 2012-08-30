@@ -4,6 +4,11 @@
 	<meta charset="utf-8" />
 	<title>Base</title>
 	<link rel="stylesheet" href="assets/css/base.css?v=1">
+
+	<script src="assets/js/cm/lib/codemirror.js"></script>
+	<link rel="stylesheet" href="assets/js/cm/lib/codemirror.css">
+	<script src="assets/js/cm/mode/htmlembedded/htmlembedded.js"></script>
+
 </head>
 <body>
 	<section class="header">
@@ -37,20 +42,15 @@
 	</section>
 	
 	<section class="code">
-		<pre>
-&lt;html&gt;
-&lt;head&gt;
-	&lt;meta charset=&quot;utf-8&quot; /&gt;
-	&lt;title&gt;[[title]]&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+		<textarea id="cview">
+		<!doctype html><html><head><meta charset='utf-8' /><title></title></head><body></body></html>
+			
+		</textarea>
 
-&lt;/body&gt;
-&lt;/html&gt;
 		</pre>
 	</section>
 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
-	<script src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.8.0.min.js"></script>
+	<script src="assets/js/base.js"></script>
 </body>
 </html>

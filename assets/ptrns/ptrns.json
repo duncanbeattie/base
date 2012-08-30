@@ -1,0 +1,44 @@
+[{
+	"dev" : {
+		"version" : "0",
+		"dev_notes" : "Currently trying to setup patterns json file, its a bastard",
+		"base_pattern" : "<!doctype html><html><head><meta charset='utf-8' /><title></title></head><body></body></html>"
+	},
+
+
+
+	"id" : "0001",
+	"name" : "Viewport",
+	"desc" : "set viewport ratio for mobile dev",
+	"pattern" : "<meta name='viewport' content='width=device-width; initial-scale=1; maximum-scale=1'>",
+	"insertion" : {
+		"insert_mode" : "append",
+		"parent_element" : "head",
+		"requires" : null,
+		"section" : "Meta"
+	}
+}, {
+	"id" : "0002",
+	"name" : "Stylesheet",
+	"desc" : "link to stylesheet, uses querystring to get latest version",
+	"pattern" : "<link rel='stylesheet' href='assets/css/base.css?v=1'>",
+	"insertion" : {
+		"insert_mode" : "append",
+		"parent_element" : "head",
+		"requires" : null,
+		"section" : "Meta"
+	}
+}, {
+	"id" : "0003",
+	"name" : "IE Classes",
+	"desc" : "adds conditional comments around the &lt;html&gt; tag to target Ie versions through css",
+	"pattern" : "<!doctype html><!--[if lt IE 8]> <html class='no-js ie7 oldie' lang='en'> <![endif]--><!--[if IE 8]> <html class='no-js ie8 oldie' lang='en'> <![endif]--><!--[if IE 9]> <html class='no-js ie9 oldie' lang='en'> <![endif]--><!--[if gt IE 9]><!--> <html class='no-js' lang='en'> <!--<![endif]-->",
+	"insertion" : {
+		"insert_mode" : "replace",
+		"parent_element" : "doctype",
+		"requires" : null,
+		"section" : "Meta"
+	}
+}]
+
+
